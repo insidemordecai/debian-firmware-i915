@@ -1,0 +1,4 @@
+http://anduin.linuxfromscratch.org/BLFS/linux-firmware/i915/
+http://anduin.linuxfromscratch.org/sources/linux-firmware/i915/
+https://github.com/wkennington/linux-firmware/tree/master/i915
+https://github.com/wkennington/linux-firmware
