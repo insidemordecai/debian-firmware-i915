@@ -1,5 +1,7 @@
 # debian-firmware-i915
 
+> **Status:** this repository was archived in 2022 and unarchived in October 2026. It was brought back to clean up and update the documentation; the firmware binaries themselves are unchanged.
+
 Intel i915 GPU firmware binaries for Debian, Kali Linux, and other Linux distributions. Use these when the `i915` kernel module is missing the firmware it needs.
 
 Copy the files you need into `/lib/firmware/i915`:
