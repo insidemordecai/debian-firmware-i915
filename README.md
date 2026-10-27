@@ -1,7 +1,17 @@
-# kali-linux-module-i915
-`Add these to /lib/firmware/i915`
+# debian-firmware-i915
 
-`This repo provides the files for module i915 firmware for Kali Linux.It is for those who might be missing the required firmware.`
+Intel i915 GPU firmware binaries for Debian, Kali Linux, and other Linux distributions. Use these when the `i915` kernel module is missing the firmware it needs.
 
-For other kinds of linux, firmware binaries are available on the linux-firmware repository, so it is most likely your current Linux distribution already packages them.  Please check with your Linux distribution to see what is currently included.
-All firmware binaries are posted on the public mailing of the linux-firmware project.  It is generally recommended that you wait for your Linux distribution to update its kernel.
+Copy the files you need into `/lib/firmware/i915`:
+
+```sh
+sudo cp *.bin /lib/firmware/i915/
+```
+
+Reboot afterwards so the module picks up the new firmware.
+
+## If your distribution already ships these
+
+All of these binaries come from the upstream `linux-firmware` project, and most distributions include them in a `linux-firmware` package. Check that package before copying anything by hand; if it is current, it is better to let your distribution handle kernel and firmware updates.
+
+Upstream releases are announced on the linux-firmware mailing list. A list of mirrors is in [`i915_lib_sources_url.txt`](i915_lib_sources_url.txt).
